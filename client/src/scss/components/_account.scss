@@ -1,0 +1,24 @@
+.account{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__section{
+        width: 70%;
+    }
+    @include responsive(mobile){
+        position: relative;
+        top: 10rem;
+        width: 138%;
+    }
+    @include responsive(small){
+        position: relative;
+        top: 10rem;
+        width: 515%;
+        height: 110vh;
+    }
+
+}
+    

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lato&family=Sora:wght@300&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+.navbar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(42, 83, 193);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    // text-transform: capitalize;
+
+    @include responsive(mobile){
+        overflow: hidden;
+        width: 100%;
+    }
+    @include responsive(small){
+        overflow: hidden;
+        width: 163% ; 
+        height: 18vh;
+        &.active{
+           display: flex;
+
+            // height: 40vh;
+            // background-color: black;
+            flex-wrap: wrap;
+            height: 163vh;
+            transition: 0.5s all;
+        }
+
+      }
+}
+.userName{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lora', serif;
+    
+    // font-weight: 600;
+
+}
+.confetti{
+    @include responsive(small){
+        height: 161px;
+    }
+
+}
+.increase{
+    @include responsive(small){
+        height: 163vh;
+    }
+}
+.menu__icon{
+    display:none !important;
+    @include responsive(small){
+        display: block !important;
+        position: absolute;
+        top: 4vh;
+        right: 5vh;
+        font-size: 75px !important;
+        color: white !important;
+    }
+}
+.imag{
+    position: relative;
+    top: 0px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    @include responsive(small){
+        position: absolute;
+        top: 3vh;
+
+        width: 112px;
+        height: 83px;
+    
+    }
+}
+
+.navbar__left{
+    display: flex;
+    align-items: center;
+}
+.navbar__details{
+    display: flex;
+    padding-left: 50px;
+    @include responsive(small){
+        display: none;
+        &.active{
+            display: block;
+            position: fixed;
+            left: 8rem;
+            top: 24rem;
+        }
+        
+    }
+}
+.navbar__details>li{
+    list-style: none;
+    font-size: 20px;
+    @include responsive(small){
+        font-size: 41px;
+    padding: 7px;
+    }
+    
+}
+.navbar__details>li>.link{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-family: 'Lora', serif;
+    // font-family: 'Poppins', sans-serif;
+    // text-transform: uppercase;
+    letter-spacing: 0.7px;
+     @include responsive(small){
+        font-family: 'Lora', serif;
+     }  
+}
+.navbar__right{
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    @include responsive(small){
+        display: none;
+        &.active{
+            display: block;
+            position: fixed;
+            top: 39rem;
+            left: 11.5rem;
+        }
+    }
+}
+.facebook{
+    width: 40px;
+    height: 25px;
+    object-fit: contain;
+    padding:0px 10px;
+    @include responsive(small){
+        position: relative;
+        top: 0.5vh;
+        width: 60px;
+        height: 40px;
+
+    }
+}
+.twitter{
+    width: 44px;
+    height: 28px;
+    object-fit: contain;
+    padding:0px 10px;
+    @include responsive(small){
+        position: relative;
+        top: 7px;
+        width: 60px;
+        height: 40px;
+    }
+    
+    // color: rgb(104, 67, 67)04, 67, 67)04, 67, 67)29, 113, 113);
+}
+.instagram{
+    
+    width: 40px;
+    height: 36px;
+    object-fit: contain;
+    padding:0px 10px;
+    color: white;
+    @include responsive(small){
+        position: relative;
+        top: 5px;
+        width: 60px;
+        height: 40px;
+    }
+}
+.youtube{
+    position: relative;
+    top: 4px;
+    width: 45px;
+    height: 40px;
+    object-fit: contain;
+    padding:0px 10px;
+    color: white;
+    @include responsive(small){
+        position: relative;
+        top: 15px;
+        width: 70px;
+        height: 45px;
+    }
+}
+@media (min-width:369px) and (max-width:500px) {
+    .navbar__details.active{
+        position: fixed;
+        left: 13rem;
+        top: 23rem;
+    }
+    
+    .navbar__right.active{
+        position: fixed;
+        top: 38rem !important;
+        left: 16.5rem !important;
+    }
+    
+}
+@media (min-width:501px) and (max-width:800px) {
+    .navbar__details.active{
+        position: fixed;
+        left: 21rem;
+        top: 21rem;
+    }
+    .navbar__right.active{
+        position: fixed;
+        top: 35rem !important;
+        left: 24rem !important;
+    }
+    
+}

@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    // overflow: scroll;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    overflow-y: hidden;
+}
+.app{
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: $bgColor;
+    // background-color: rgb(223, 221, 221);
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    @include responsive(small){
+        height: 163vh;
+        width: 163vw;
+        // background: linear-gradient(white,rgb(102, 136, 231) );
+
+    }
+}

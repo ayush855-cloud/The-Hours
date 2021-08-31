@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    @include responsive(mobile){
+        width: 100%;
+    }
+    // @include responsive(small){
+    //     width: 150%;
+    // }
+}
+.updateImage{
+    border: 2px solid rgb(224, 224, 224);
+    border-radius: 20px;
+    background: linear-gradient(white);
+    // color: white;
+    background-color: white;
+    padding: 1.5rem;
+    @include responsive(small){
+        position: relative;
+        top: 4rem;
+    width: 200%;
+    }
+    &__h3{
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        margin-bottom: 2rem;
+        @include responsive(small){
+            font-size: 29px;
+        }
+    }
+}
+.box{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    top: 14vh;
+    left: 12rem;
+    z-index:99;
+    @include responsive(small){
+        width: 104%;
+        left: 1rem;  
+    }
+}
+@media (min-width:900px) and (max-width:1100px){
+    .box{
+        left: 3rem !important;
+    }
+    .rows{
+        width: 121% !important;
+    }
+}
+
+.updateCard{
+    border: 2px solid rgb(224, 224, 224);
+    border-radius: 20px;
+    background: linear-gradient(white);
+    // color: white;
+    background-color: white;
+    padding: 1.5rem;
+    @include responsive(small){
+        position: relative;
+    width: 200%;
+    }
+    &__h3{
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        margin-bottom: 2rem;
+        @include responsive(small){
+            font-size: 29px;
+        }
+    }
+}
+.box{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    
+    top: 14vh;
+    left: 12rem;
+    z-index:99;
+    @include responsive(small){
+        width: 104%;
+        left: 1rem;
+        
+    }
+}
+.post__card{
+    width: 1000px;
+    margin: 0 auto;
+    box-shadow: rgba(0,0,0,0.19) 0px 10px 20px ,rgba(0,0,0,0.23) 0px 6px 6px;
+    // border: 1px solid black;
+}
+
+.mt-80{
+    position: absolute;
+}
+.mt-100{
+
+    margin-top: 7rem;
+}
+.pt-15{
+    padding: 1.5rem;
+}
+.ml-20{
+    position: relative;
+    left: 2rem;
+}
+.ml-minus-15{
+    margin-left: -3.8rem;
+}
+.mr-minus-15{
+    margin-left: -1.5rem;
+}
+.card{
+    border: 2px solid rgb(224, 224, 224);
+    border-radius: 20px;
+    background: linear-gradient(white);
+    // color: white;
+    background-color: white;
+    padding: 1.5rem;
+    @include responsive(small){
+        // position: relative;
+        // left: 5rem;
+        // width: 205%;
+        position: relative;
+    left: 4rem;
+    width: 212%;
+    }
+    &__h3{
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        margin-bottom: 2rem;
+        @include responsive(small){
+            font-size: 29px;
+        }
+    }
+}
+.cards{
+    border: 2px solid rgb(224, 224, 224);
+    border-radius: 20px;
+    background: linear-gradient(white);
+    // color: white;
+    background-color: white;
+    padding: 1.5rem;
+    @include responsive(small){
+        position: relative;
+        left: 0rem;
+        top: 4rem;
+        width: 129%;
+    }
+    &__h3{
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        margin-bottom: 2rem;
+        @include responsive(small){
+            font-size: 29px;
+        }
+    }
+}
+
+.group{
+    margin-bottom: 1.3rem;
+    &__contral{
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        background: #efefef;
+        outline: 0;
+        border-bottom: 4px solid transparent;
+        transition: 0.5s all;
+        &:focus{
+            border-bottom-color: #3C8DAD  ;
+        }
+        @include responsive(small){
+            
+            margin: 15px 0px;
+            padding: 1.5rem;
+            // border: 2px solid rgb(80, 78, 78);
+            border-bottom: 4px solid transparent;
+        }
+    }
+    &__detail{
+        width: 100%;
+        padding: 1.5rem;
+        border: none;
+        background: #efefef;
+        outline: 0;
+        border-bottom: 4px solid transparent;
+        transition: 0.5s all;
+        &:focus{
+            border-bottom-color: rgb(42, 83, 193) ;
+        }
+        @include responsive(small){
+            margin: 15px 0px;
+            padding: 1rem;
+            width: 56%;
+            // border: 2px solid rgb(80, 78, 78);
+            border-bottom: 8px solid transparent;
+            &:focus{
+                border-bottom-color: rgb(42, 83, 193) ;
+            }
+        }
+    }
+    &__control{
+        width: 100%;
+        padding: 1.5rem;
+        border: none;
+        background: #efefef;
+        outline: 0;
+        border-bottom: 4px solid transparent;
+        transition: 0.5s all;
+        &:focus{
+            border-bottom-color: rgb(42, 83, 193) ;
+        }
+        @include responsive(small){
+            margin: 15px 0px;
+            padding: 1.5rem;
+            // border: 2px solid rgb(80, 78, 78);
+            border-bottom: 8px solid transparent;
+            &:focus{
+                border-bottom-color: rgb(42, 83, 193) ;
+            }
+        }
+    }
+
+}
+
+.btn{
+    text-decoration: none;
+    outline: none;
+    color:#ffffff;
+    height: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+.btn-default{
+   background-color: rgb(51, 93, 206) ;
+}
+.btn-block{
+ width: 100%;
+
+ @include responsive(small){
+    font-size: 24px;
+    height: 4rem;
+    height: 11vh;
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+ }
+ 
+}
+input{
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    @include responsive(small){
+        font-size: 28px;
+        
+    }
+}
+input::-webkit-input-placeholder{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    @include responsive(small){
+        font-size: 25px;
+    }
+}
+.form-heading{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(14, 28, 64);
+    @include responsive(small){
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    font-size: 63px;
+    text-transform: uppercase;
+    }
+}
+label{
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
+    font-family: 'Poppins', sans-serif;
+    // font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    @include responsive(small){
+        margin-top: 2.5rem;
+        font-size: 1.7rem;
+    }
+}
+#image{
+    display: none;
+}
+.image__label{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: #3C8DAD;
+    color: $white;
+    border-radius: 10px;
+    font-size: 16px;
+    @include responsive(small){
+        font-size: 19px;
+    }
+}
+.btn-initial{
+    // font-family: 'Poppins', sans-serif !important;
+    background-color: #3C8DAD ;
+    width: 100%;
+    text-align: center;
+}
+.btn-detail{
+    background-color: #3C8DAD ;
+    width: 100%;
+    text-align: center;
+    @include responsive(small){
+        width: 56%;
+    }
+}
+.imagePreview{
+    width: 100%;
+    height: auto;
+    img{
+        @include responsive(small){
+            width: 100%;
+        }
+    }
+}
+
+.previewImage{
+    width: 100%;
+    height: auto;
+}
+.length{
+    font-size: 1.5rem;
+}
+#description{
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+.commentSection{
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    @include responsive(small){
+        width: 100%;
+    }
+}
+.MuiAccordion-rounded {
+    border-radius: 50%;
+    @include responsive(small){
+        width: 56%;
+    }
+   
+}
+.MuiAccordionDetails-root {
+    display: flex;
+    padding: 8px 16px 16px;
+    flex-direction: column;
+}
+.wrap{
+    display: flex;
+}
+.mobile{
+    @include responsive(small){
+        margin-left: -3.5rem;
+    }
+    
+}
+.quill{
+    @include responsive(small){
+        height: 29vh;
+    }
+}
